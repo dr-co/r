@@ -2,8 +2,6 @@ Changes
 lib/DR/R.pm
 Makefile.PL
 MANIFEST
-ppport.h
 R.xs
 README
 t/010-ping.t
-t/DR-R.t
