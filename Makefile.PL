@@ -2,6 +2,8 @@ use 5.024001;
 use ExtUtils::MakeMaker;
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
+
+my $cflags = $ExtUtils::MakeMaker::Config{ccflags};
 WriteMakefile(
     NAME              => 'DR::R',
     VERSION_FROM      => 'lib/DR/R.pm', # finds $VERSION, requires EU::MM from perl >= 5.5
@@ -16,11 +18,14 @@ WriteMakefile(
     INC               => '-I. -Irtree -Irtree/salad -Irtree/small',
     OBJECT            => '$(O_FILES)', # link all the C files too
 
-    CCFLAGS             => '-std=c99',
+    CCFLAGS             => "$cflags -std=gnu99",
 
 
-    C   => [
-        'rtree.c',
-        'matras.c'
-    ],
+#     XS  => {
+#         'R.xs'          => 'R.c'
+#     },
+#     C   => [
+#         'rtree.c',
+#         'matras.c'
+#     ],
 );
