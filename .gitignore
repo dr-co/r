@@ -7,3 +7,4 @@ blib
 pm_to_blib
 DR-R-*.tar.gz
 R.bs
+debian/*
