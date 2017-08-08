@@ -424,6 +424,7 @@ SV * iterator_types(SV *class)
                 }
 
                 RETVAL = newRV((SV *)list);
+                (void)class;
         OUTPUT:
                 RETVAL
 
