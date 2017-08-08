@@ -19,13 +19,4 @@ WriteMakefile(
     OBJECT            => '$(O_FILES)', # link all the C files too
 
     CCFLAGS             => "$cflags -std=gnu99",
-
-
-#     XS  => {
-#         'R.xs'          => 'R.c'
-#     },
-#     C   => [
-#         'rtree.c',
-#         'matras.c'
-#     ],
 );
