@@ -1,8 +1,8 @@
+.gitignore
 Changes
 MANIFEST
 Makefile.PL
 R.xs
-README
 lib/DR/R.pm
 matras.c
 rtree.c
