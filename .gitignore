@@ -5,3 +5,4 @@ R.c
 blib
 *.o
 pm_to_blib
+DR-R-*.tar.gz
