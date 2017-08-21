@@ -8,7 +8,7 @@ WriteMakefile(
     PREREQ_PM         => {},
     ABSTRACT_FROM     => 'lib/DR/R.pm',
     AUTHOR            => 'Dmitry E. Oboukhov <unera@>',
-    LICENSE           => 'perl',
+    LICENSE           => 'bsd2clause',
     LIBS              => [''],
     DEFINE            => '',
     INC               => '-I. -Irtree -Irtree/salad -Irtree/small',
